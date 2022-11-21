@@ -1,0 +1,75 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 20px 20px 20px;
+  gap: 20px;
+
+  & a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.photo-card {
+  max-width: 450px;
+  max-height: 400px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: transform 200ms;
+
+  & img {
+    display: block;
+    object-fit: cover;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 51px -5px rgba(0, 0, 0, 0.75);
+    transform: scale(1.03);
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .info-item {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.load-more {
+  padding: 10px;
+  display: block;
+  margin: 0px auto 40px;
+  min-width: 180px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(212, 212, 212);
+    outline: 2px solid rgb(0, 153, 255);
+  }
+}
+
+.label {
+  margin-left: 10px;
+}
+
+// .gallery a:last-child {
+//   outline: 5px solid tomato;
+// }
